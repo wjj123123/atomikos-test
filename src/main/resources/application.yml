@@ -1,0 +1,19 @@
+spring:
+  mybatis:
+    mapper-locations: classpath:mapper/*Mapper:xml
+  application:
+    name: atomikos-test
+  datasource:
+    databases:
+      db1:
+        driver: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.7.17:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+        username: zhiku
+        password: zhuku_temp
+        mapperLocations: classpath*:mapper/db1/*.*
+      db2:
+        driver: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.7.200:4000/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=false
+        username: zhiku
+        password: cTFhMnozVzFTMlgz
+        mapperLocations: classpath*:mapper/db2/*.*
